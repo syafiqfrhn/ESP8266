@@ -6,7 +6,7 @@ This system makes of **HTTPS Redirect library** from **electronicsguy**. The fil
 
 ## Components and Operations
 
-This system makes up of three main parts; the input and processing unit, the communication unit, and the output and database.
+This system makes up of three main parts; the input & processing unit, the communication unit, and the output & database.
 
 ### Input and Processing Unit
 
@@ -22,4 +22,4 @@ There are many methods of communication available in order to make the system to
 
 The data from sensors are stored in the *Google Sheets* which acts a simplified database. Google Sheets can be scripted using *Google Apps Script* to create and modify spreadsheets. *Google Apps Script* is a *JavaScript* cloud scripting language that is executed in *Google Cloud* instead of running in the client-side.
 
-In the system, *Google Sheets* is used to store and keep track of the data regarding the parking availability. To display the data in a more interactive and user-friendly format, the *Google HTML Service* is used to create user interfaces in the form of web pages. Hence, *Google Apps Script* acts as a link between *ESP8266* Wi-Fi module and *Google Sheets*, and also between *Google Sheets* and the web pages.
+In the system, *Google Sheets* is used to store and keep track of the data regarding the parking availability. To display the data in a more interactive and user-friendly format, the *Google HTML Service* is used to create user interface in the form of web pages. Hence, *Google Apps Script* acts as a link between *ESP8266* Wi-Fi module & *Google Sheets*, and also between *Google Sheets* & the web pages.
