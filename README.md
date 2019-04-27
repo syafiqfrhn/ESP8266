@@ -8,7 +8,7 @@ This system makes of **HTTPS Redirect library** from **electronicsguy**. The fil
 
 This system makes up of three main parts; the input & processing unit, the communication unit, and the output & database.
 
-### Input and Processing Unit
+### Input & Processing Unit
 
 Each parking space consist of one *HC-SR04* ultrasonic sensor which acts as an input to determine whether the parking space is vacant or occupied. The sensor operates at 40 kHz, 5V, and 15mA of current. Also, the range of the detectable distance from the sensor is between 2cm to 4m. 
 
@@ -18,7 +18,7 @@ Each sensor is connected to an *Arduino Mega* microcontroller board which acts a
 
 There are many methods of communication available in order to make the system to be able to communicate with the *Google Sheets* via Internet. In this system, the methods of communication used is *ESP8266 ESP-01* Wi-Fi module. The module provides the capability to wirelessly connect to a Wi-Fi network to transmit and receive data. It uses 2.4 Hz Wi-Fi (802.11 b/g/n) specification that supporting WPA/WPA2. As the module itself is a microcontroller chip, it needs to be programmed first in order to use it.
 
-### Output and Back-End Database
+### Output & Database
 
 The data from sensors are stored in the *Google Sheets* which acts a simplified database. Google Sheets can be scripted using *Google Apps Script* to create and modify spreadsheets. *Google Apps Script* is a *JavaScript* cloud scripting language that is executed in *Google Cloud* instead of running in the client-side.
 
