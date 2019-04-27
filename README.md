@@ -4,7 +4,7 @@ The prototype of the parking system consist of four *HC-SR04* ultrasonic sensors
 
 This system makes of **HTTPS Redirect library** from **electronicsguy**. The files used and modified in this system are **GoogleDocs.ino** and **GoogleScript.gs**. The original files are located in the **HTTPSRedirect** directory.
 
-The system was developed on July 2018.
+This system was developed on July 2018.
 
 ## Components and Operations
 
