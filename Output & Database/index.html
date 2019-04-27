@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<base target="_top"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!--- Include the StyleSheet.html file --->
+		<?!= include('StyleSheet'); ?>
+	
+	</head>
+	
+	<!--- Calls a function to get the data from Google Sheets --->
+	<body onload="setSheetsData (); dateTime('dateTime');">
+	
+		<!--- The top navigation bar. Contain only the sidebar toggle button --->
+		<nav class="topnav" id="myTopnav">
+			<a href="javascript:void(0);" onclick="sidebarButton()">&#9776;</a>
+		</nav>
+		
+		<!--- The sidebar. Contain link to the other pages --->
+		<nav id="mySidenav" class="sidenav">
+			<img src="https://lh3.googleusercontent.com/lsBtvgbkz13kSYpEHbg5zob9C8aGrXwT-OmOLDAOsM48qirIaud4zTgUEKLHdMX21pXgvjsroyFuR8p4m9DrMKtx8gqvV2H_cvswf0826tW9b_ryckOLhc4SocP_znzb-CUQPl_uaf0=w2400" alt="Syafiq">
+			<?var url = getScriptUrl();?><a href='<?=url?>?page=index.html'>Home</a>
+			<?var url = getScriptUrl();?><a href='<?=url?>?page=about.html'>About</a>
+		</nav>
+		
+		<!--- All the main content. Shift to the right when opening sidebar --->
+		<main class="shift">
+		
+			<article>
+		
+				<!--- The main header --->
+				<header >
+					<p><span id="headerindex">SMART PARKING SYSTEM</span></p>
+					<p><span id="dateTime"></span></p>
+				</header>
+			
+				<!--- Information about the total parking capacity, vacant space, and occupied space --->
+				<section>
+					<h3>Total Parking Space Capacity</h3>
+					<p><span class="lineacross"></span></p>
+					<table>
+						<tr>
+							<th>Vacant Space</th>
+							<td><span id="totalV" class="statusdata"></span></td>
+						</tr>
+						<tr>
+							<th>Occupied Space</th>
+							<td><span id="totalO" class="statusdata"></span></td>
+						</tr>
+						<tr>
+							<th>Total</th>
+							<td>4</td>
+						</tr>
+					</table>
+				
+					<!--- Information about the parking status and its recent changing time --->
+					<h3>Parking Space Status</h3>
+					<p><span class="lineacross"></span></p>
+					<table>
+						<tr>
+							<th>Parking Space</th>
+							<th>Status</th>
+							<th>Last Changes</th>
+						</tr>
+						<tr>
+							<td>A1</td>
+							<td><span id="status0" class="statusdata"></span></td>
+							<td><span id="time0"></span> </td>
+						</tr>
+						<tr>
+							<td>A2</td>
+							<td><span id="status1" class="statusdata"></span></td>
+							<td><span id="time1"></span></td>
+						</tr>
+						<tr>
+							<td>A3</td>
+							<td><span id="status2" class="statusdata"></span></td>
+							<td><span id="time2"></span></td>
+						</tr>
+						<tr>
+							<td>A4</td>
+							<td><span id="status3" class="statusdata"></span></td>
+							<td><span id="time3"></span></td>
+						</tr>    
+					</table>
+				</section>
+			
+			</article>
+		
+		</main>
+		
+		<footer class="shift">
+			<p class="contact"><b>Contact Me</b></p>
+			<p class="contact">
+				&#x1f3e2;&#xfe0e; <a href="https://fke.uitm.edu.my/v5x/" target="_blank">
+				Faculty of Electrical Engineering, Universiti Teknologi MARA (UiTM), 
+				40450 Shah Alam, Selangor Darul Ehsan, Malaysia.</a><br>
+				&#x2709;&#xfe0e; <a href="mailto:syafiqfarhanharis@gmail.com?Subject=Greetings">
+				syafiqfarhanharis@gmail.com</a><br>
+				&#x1f30d;&#xfe0e; <a href="https://www.linkedin.com/in/syafiqfarhanharis/" target="_blank">
+				https://www.linkedin.com/in/syafiqfarhanharis/</a>
+			</p>
+			<p>
+				<span class="lineacross"></span>
+			</p>
+			<p id="copyright">
+				2018. Created by Syafiq Farhan.
+			</p>
+		</footer>
+		
+		<!--- Include the JavaScript.html file --->
+		<?!= include('JavaScript'); ?>
+	
+	</body>
+	
+</html>
