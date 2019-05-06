@@ -30,6 +30,8 @@ function save_data(tag, value)
 {
 	Logger.log("--- save_data ---"); 
 	
+	//Grab the string data from ESP8266.
+	//E.g. "A1V"; "1" means the first parking slot, "V" means vacant ("O" means occupied). 
 	try
 	{
 		if(value=="A1V")
