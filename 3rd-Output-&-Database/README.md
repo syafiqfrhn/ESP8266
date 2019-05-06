@@ -6,4 +6,4 @@ Also, note that Google HTML Service also accepts HTML and Google Apps Script. So
 
 This how the output on the Google Sheets will looks like:
 
-![alt text](https://github.com/syafiqfrhn/Real-Time-Parking-System-Monitoring-Using-Google-Sheets/tree/master/3rd-Output-%26-Database/img/Output.png)
+![alt text](https://github.com/syafiqfrhn/Real-Time-Parking-System-Monitoring-Using-Google-Sheets/blob/master/3rd-Output-%26-Database/img/Output.PNG)
