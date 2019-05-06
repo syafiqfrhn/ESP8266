@@ -2,13 +2,13 @@
 
 The prototype of the parking system consist of four *HC-SR04* ultrasonic sensors, two *Arduino Mega*, and an *ESP-8266* Wi-Fi module as part of hardware components. For the software parts, *Google Sheets* acts as a simplified database, and *Google HTML Service* web page were used to display the availability of parking spaces in real-time.
 
-This system makes of **HTTPS Redirect library** from **electronicsguy**. The files used and modified in this system are **GoogleDocs.ino** and **GoogleScript.gs**. The original files are located in the **HTTPSRedirect** directory.
+This system make use of **HTTPS Redirect library** from **electronicsguy**. The files used and modified in this system are **GoogleDocs.ino** and **GoogleScript.gs**. The original files are located in the **HTTPSRedirect** directory.
 
 This system was developed on July 2018.
 
 ## Components and Operations
 
-This system makes up of three main parts; the input & processing unit, the communication unit, and the output & database.
+This system makes up of three main parts; the Input & Processing Unit, the Communication Unit, and the Output & Database.
 
 ### Input & Processing Unit
 
@@ -22,7 +22,7 @@ There are many methods of communication available in order to make the system to
 
 ### Output & Database
 
-The data from sensors are stored in the *Google Sheets* which acts a simplified database. Google Sheets can be scripted using *Google Apps Script* to create and modify spreadsheets. *Google Apps Script* is a *JavaScript* cloud scripting language that is executed in *Google Cloud* instead of running in the client-side.
+The data from sensors are stored in the *Google Sheets* which acts a simplified database. Google Sheets can be scripted using *Google Apps Script* to create and modify spreadsheets. *Google Apps Script* is a *JavaScript* cloud scripting language that is executed on *Google Cloud*.
 
 In the system, *Google Sheets* is used to store and keep track of the data regarding the parking availability. To display the data in a more user-friendly format, the *Google HTML Service* is used to create user interface in the form of web pages. Hence, *Google Apps Script* acts as a link between *ESP8266* Wi-Fi module & *Google Sheets*, and also between *Google Sheets* & the web page.
 
