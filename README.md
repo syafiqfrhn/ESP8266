@@ -1,6 +1,6 @@
 # Real Time Parking System Monitoring Using Google Sheets
 
-The prototype of the parking system consist of four *HC-SR04* ultrasonic sensors, two *Arduino Mega*, and an *ESP-8266* Wi-Fi module as part of hardware components. For the software parts, *Google Sheets* acts as a simplified database, and *Google HTML Service* web pages were used to display the availability of parking spaces in real-time.
+The prototype of the parking system consist of four *HC-SR04* ultrasonic sensors, two *Arduino Mega*, and an *ESP-8266* Wi-Fi module as part of hardware components. For the software parts, *Google Sheets* acts as a simplified database, and *Google HTML Service* web page were used to display the availability of parking spaces in real-time.
 
 This system makes of **HTTPS Redirect library** from **electronicsguy**. The files used and modified in this system are **GoogleDocs.ino** and **GoogleScript.gs**. The original files are located in the **HTTPSRedirect** directory.
 
@@ -24,4 +24,13 @@ There are many methods of communication available in order to make the system to
 
 The data from sensors are stored in the *Google Sheets* which acts a simplified database. Google Sheets can be scripted using *Google Apps Script* to create and modify spreadsheets. *Google Apps Script* is a *JavaScript* cloud scripting language that is executed in *Google Cloud* instead of running in the client-side.
 
-In the system, *Google Sheets* is used to store and keep track of the data regarding the parking availability. To display the data in a more interactive and user-friendly format, the *Google HTML Service* is used to create user interface in the form of web pages. Hence, *Google Apps Script* acts as a link between *ESP8266* Wi-Fi module & *Google Sheets*, and also between *Google Sheets* & the web pages.
+In the system, *Google Sheets* is used to store and keep track of the data regarding the parking availability. To display the data in a more user-friendly format, the *Google HTML Service* is used to create user interface in the form of web pages. Hence, *Google Apps Script* acts as a link between *ESP8266* Wi-Fi module & *Google Sheets*, and also between *Google Sheets* & the web page.
+
+This how the output on the Google Sheets will looks like:
+
+![alt text](https://github.com/syafiqfrhn/Real-Time-Parking-System-Monitoring-Using-Google-Sheets/blob/master/3rd-Output-%26-Database/img/GSOutput.PNG)
+
+And this is how the output display in the web page.
+
+![alt text](https://github.com/syafiqfrhn/Real-Time-Parking-System-Monitoring-Using-Google-Sheets/blob/master/3rd-Output-%26-Database/img/WebOutput.PNG)
+
